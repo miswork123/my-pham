@@ -293,3 +293,107 @@ width: 22.4%;
     visibility: visible;
     
 }
+
+/* end header */
+
+.footer-end{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    padding-top: 32px;
+    padding-bottom: 52px;
+    justify-content: space-between;
+}
+
+.information{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.text-h5{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.img-logo img{
+    max-width: 271px;
+}
+
+.information p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.svg-maxwidth{
+    font-weight: 500;
+    line-height: 28px;
+    display: flex;
+    column-gap: 13px;
+}
+.svg-maxwidth img{
+    max-width: 28px;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.footer-list li a{
+    white-space: nowrap;
+}
+
+.register{
+    display: flex;
+    align-items: center;
+    background: #C83F51;
+    border-radius: 10px;
+    max-width: 237px;
+   
+}
+
+.register input{
+    outline: none;
+    padding: 10px 10px;
+    border: 1px solid #818181;
+    background: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 153px;
+}
+
+.register input::placeholder{
+    font-size: 14px;
+    color: #818181;
+}
+
+.register button{
+    outline: none;
+    border: none;
+   background: none;
+    padding: 10px;
+    white-space: nowrap;
+    height: 100%;
+    color: #fff;
+    cursor: pointer;
+}
+.pay{
+    display: flex;
+    align-items: center;
+    column-gap: 7.5px;
+    margin-bottom: 15px;
+}

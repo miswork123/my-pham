@@ -95,22 +95,25 @@ button:focus {
     padding-right: 20px;
 }
 
+header {
+    width: 100%;
+}
 
-header{
+.header__inner {
     display: flex;
     align-items: flex-start;
     width: 100%;
     height: auto;
-    padding-left: 45px;
     padding-top: 43px;
-    padding-right: 54px;
 }
 
 .header-home{
     display: flex;
     align-items: flex-start;
     width: 77%;
-    padding-right: 5px;
+    padding-right: 6.8%;
+    justify-content: space-between;
+    
 }
 
 .menu-icon{
@@ -119,6 +122,7 @@ header{
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px; 
     margin-right: 25px;
+    display: none;
 }
 .menu-icon span{
     display: block;
@@ -131,7 +135,8 @@ header{
     width: 65.3%;
     margin-left: 22px;
 }
-.from-icon{
+
+.form__search{
     display: flex;
     align-items: center;
     font-size: 12px;
@@ -143,12 +148,17 @@ header{
     width: 100%;
     border: none;
     outline: none;
-    font-size: 12px;
+    font-size: 16px;
     background: rgba(203, 96, 136, 0.15);
-    padding: 14.6px 11px;
-    border-radius: 15px;
-    
+    padding: 12px 11px;
+    border-radius: 15px;   
 }
+
+.input-search::placeholder{
+    font-size: 12px;
+    color: #818181;
+}
+
 .icon-search{
     outline: none;
     border: none;
@@ -160,6 +170,7 @@ header{
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     cursor: pointer;
+    height: 100%;
 }
 
 .list-product{
@@ -198,14 +209,21 @@ header{
 /* end header */
 
 .section-boshop{
+    width: 100%;
+}
+
+.section-boshop__content {
+    padding: 32px 0px 54px ;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     width: 100%;
     height: auto;
-    padding: 29px 40px 54px 40px ;
-    margin: 0 auto;
-    column-gap: 22px;
+    column-gap: 14px;
+}
+
+.boshop-center{
+    padding-right: 6px;
 }
 
 .boshop-left{
@@ -216,38 +234,36 @@ width: 22.4%;
     display: flex;
     flex-direction: column;
     row-gap: 28px;
+    position: relative;
+    padding-right: 11px;
     
 }
 
 .menu__hair{
     width: 100%;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
     border-bottom: 1px  solid #00000026;
-}
-
-.menu__hair img{
-    width: 27px;
-}
-.menu__hair a{
-   display: flex;
+    display: flex;
    align-items: center;
    justify-content: space-between;
    width: 100%;
    font-size: 16px;
    font-weight: 500;
 }
+
+.menu__hair img{
+    width: 27px;
+}
+
 .logo-text{
     display: flex;
     align-items: center;
     column-gap: 18px;
 }
-.list-menu{
-    position: relative;
-}
 
 .sup-list{
     position: absolute;
-    left: 102%;
+    left: 99%;
     top: 0;
     display: flex;
     padding: 20px;
@@ -260,7 +276,7 @@ width: 22.4%;
     opacity: 0;
     visibility: hidden;
     transition: 0.25s;
-  
+    min-height: 100%;
 }
 
 .shampoo p{
@@ -272,46 +288,8 @@ width: 22.4%;
     font-size: 16px;
 }
 
-.list-menu.active .sup-list{
-    
-}
-
-
-
-.list-menu.one:hover .sup-list.one{
+.list-menu:hover .sup-list{
     opacity: 1;
     visibility: visible;
     
-}
-.list-menu.two:hover .sup-list{
-    opacity: 1;
-    visibility: visible;
-    top: -65px;
-}
-
-.list-menu.ther:hover .sup-list{
-    opacity: 1;
-    visibility: visible;
-    top: -400%;
-}
-
-.list-menu.for:hover .sup-list{
-    opacity: 1;
-    visibility: visible;
-    top: -555%;
-}
-
-.list-menu.five:hover .sup-list{
-    opacity: 1;
-    visibility: visible;
-    top: -800%;
-    height: 1200%;
-}
-
-
-.list-menu.six:hover .sup-list{
-    opacity: 1;
-    visibility: visible;
-    top: -1000%;
-    height: 1200%;
 }

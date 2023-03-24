@@ -460,20 +460,20 @@ button:focus {
 
 /* end section-hotdeal */
 
-.section__cotegory-product{
+.section__cotegory-product {
     width: 100%;
 }
 
-.cosmetology{
+.cosmetology {
     width: 100%;
 }
 
-.cosmetology h2{
+.cosmetology h2 {
     font-size: 20px;
     font-weight: 600;
 }
 
-.list-cosmetolory{
+.list-cosmetolory {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
@@ -482,26 +482,26 @@ button:focus {
     row-gap: 25px;
 }
 
-.cosmetolory-item{
+.cosmetolory-item {
     width: calc(100% / 7 - 20px);
 }
 
-.cosmetolory-item a{
+.cosmetolory-item a {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.cosmetolory-item a img{
+.cosmetolory-item a img {
     background: #dfe0e1;
-    border-radius: 15px; 
+    border-radius: 15px;
     max-width: 143px;
     object-fit: cover;
 }
 
 
-.item-product{
+.item-product {
     width: 100%;
     height: 100%;
     display: flex;
@@ -512,37 +512,38 @@ button:focus {
     margin-top: 5px;
 }
 
-.item-product p{
+.item-product p {
     font-size: 14px;
     font-weight: 500;
     white-space: nowrap;
-    
-    
+
+
 }
-.item-product span{
+
+.item-product span {
     font-size: 12px;
     color: #AAAAAA;
 }
 
 /* end .section__cotegory-product */
 
-.section-trademark{
+.section-trademark {
     width: 100%;
 }
 
-.trademark-boshop{
+.trademark-boshop {
     display: flex;
     align-items: center;
-     width: 100%;
-     padding-top: 90px;
-     padding-bottom: 53px;   
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 53px;
 }
 
-.trademark-left{
+.trademark-left {
     width: 22%;
 }
 
-.trademark-left h2{
+.trademark-left h2 {
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -550,7 +551,7 @@ button:focus {
     width: 80%;
 }
 
-.trademark-left a{
+.trademark-left a {
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -559,17 +560,25 @@ button:focus {
     color: #4E6FB0;
 }
 
-.trademark-right{
+.trademark-left a:hover {
+    color: #D65F1D;
+}
+
+.trademark-left a:hover svg path {
+    fill: #D65F1D;
+}
+
+.trademark-right {
     width: 63%;
     margin: 0 auto;
-    margin-right: 60px;  
+    margin-right: 60px;
 }
 
-.trademark-product a p{
-   padding: 0px 5px;
+.trademark-product a p {
+    padding: 0px 5px;
 }
 
-.trademark-product a{
+.trademark-product a {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -580,76 +589,96 @@ button:focus {
 
 /* end .section-trademark */
 
-.section-new{
+.section-new {
     width: 100%;
 }
 
-.text-h2.one{
+.text-h2.one {
     font-size: 24px;
     font-weight: 600;
     line-height: 28.6px;
     width: 20%;
 }
 
-.text__new-product{
+.text__new-product {
     display: flex;
     width: 100%;
     align-items: flex-start;
     margin-bottom: 22px;
 }
 
-.make-up{
+.make-up {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     width: 80%;
     column-gap: 13px;
 }
-.make-up a{
+
+.make-up a {
     padding: 5px 15px;
     background: #EEEEEE;
     border-radius: 10px;
     font-size: 12px;
 }
 
-.make-up a:hover{
+.make-up p {
+    padding: 5px 15px;
+    background: #EEEEEE;
+    border-radius: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.make-up a:hover {
     color: #ffffff;
     background: #D65F1D;
     box-shadow: 0px 0px 30px #D65F1D;
 }
 
-.make-up a:nth-child(1){
+.make-up a:nth-child(1) {
+    background: #D65F1D;
+    color: #fff;
+}
+
+.make-up p:hover {
+    color: #ffffff;
+    background: #D65F1D;
+    box-shadow: 0px 0px 30px #D65F1D;
+}
+
+.tab-mekup.active {
     background: #D65F1D;
     color: #ffffff;
 }
 
-.buy-now{
+.buy-now {
     width: 100%;
     display: flex;
     padding-bottom: 37px;
 }
 
-.buy-now__left{
+.buy-now__left {
     width: 28%;
 }
 
-.buy-now__right{
+.buy-now__right {
     width: 72%;
     margin-left: 0px;
 }
 
-.product-item.one{ 
+.product-item.one {
     width: calc(100% / 4 - 13px);
     margin-bottom: 25px;
 }
 
-.home-slider__mekeup{
+.home-slider__mekeup {
     display: flex;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
     column-gap: 15px;
 }
 
-.see-more__two{
+.see-more__two {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -657,26 +686,42 @@ button:focus {
     justify-content: center;
 }
 
-.see-more__two a{
-    padding: 3px 15px 3px 22px ;
+.see-more__two a {
+    padding: 3px 15px 3px 22px;
     border: 1px solid #D65F1D;
     border-radius: 10px;
     color: #D65F1D;
 }
 
+.see-more__two a:hover {
+    background: #D65F1D;
+    color: #ffffff;
+    box-shadow: 0px 0px 30px #D65F1D;
+}
+
+.see-more__two a:hover svg path {
+
+    fill: #ffffff;
+}
+
 /* end .section-new */
 
-.section__best-seller{
+.section__best-seller {
     width: 100%;
     padding-top: 61px;
     padding-bottom: 32px;
 }
 
-.best-seller__list{
+.best-seller-list {
     width: 100%;
+    display: none;
 }
 
-.best-seller__list{
+.best-seller-list.show {
+    display: block;
+}
+
+.best-seller__list {
     display: flex;
     align-items: center;
     row-gap: 10px;
@@ -684,29 +729,31 @@ button:focus {
     flex-wrap: wrap;
     padding-bottom: 15px;
 }
-.best-seller__list li{
+
+.best-seller__list li {
     width: calc(100% / 5 - 7px);
 }
+
 /* end section__best-seller */
 
-.delivery{
+.delivery {
     width: 100%;
     background: #FFF5F5;
     height: auto;
 }
 
-.list-delivery{
+.list-delivery {
     display: flex;
     align-items: stretch;
     padding-top: 27px;
     padding-bottom: 28px;
 }
 
-.list-delivery li{
+.list-delivery li {
     width: calc(100% / 4 - 0px);
 }
 
-.list-delivery li a{
+.list-delivery li a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -714,19 +761,21 @@ button:focus {
     justify-content: center;
     text-align: center;
 }
-.list-delivery li a p{
+
+.list-delivery li a p {
     font-size: 16px;
     font-weight: 500;
     margin-top: 16px;
     margin-bottom: 8px;
     width: 100%;
 }
-.list-delivery li a span{
+
+.list-delivery li a span {
     font-size: 14px;
     width: 80%;
 }
 
-.list-delivery li a img{
+.list-delivery li a img {
     max-width: 64px;
 }
 

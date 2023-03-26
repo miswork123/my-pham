@@ -1,11 +1,11 @@
-// let titleQuestion = document.querySelectorAll('.list-menu');
-// for (let i = 0; i < titleQuestion.length; i++) {
+let titleQuestion = document.querySelectorAll('.list-menu');
+for (let i = 0; i < titleQuestion.length; i++) {
 
-// 	titleQuestion[i].addEventListener('click', function() {
+	titleQuestion[i].addEventListener('click', function() {
 		
-// 		this.classList.toggle('active');
-// 	});
-// }
+		this.classList.toggle('active');
+	});
+}
 
 
 	const $ = document.querySelector.bind(document)
@@ -26,4 +26,17 @@
 			this.classList.add('active')
 			best.classList.add('show')
 		}
-	})
+	});
+
+
+	let menuIteam = document.querySelector(".menu-icon");
+	let menuMobile = document.querySelector(".boshop-left");
+
+	menuIteam.addEventListener("click", function () {
+	this.classList.toggle("active");
+	menuMobile.classList.toggle("show");
+});
+
+
+
+

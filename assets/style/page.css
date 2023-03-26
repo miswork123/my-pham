@@ -110,6 +110,12 @@ button:focus {
     padding-right: 6px;
 }
 
+.boshop-center a img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
 .boshop-left {
     width: 22.4%;
 }
@@ -531,6 +537,12 @@ button:focus {
     width: 100%;
 }
 
+.tab-product {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .trademark-boshop {
     display: flex;
     align-items: center;
@@ -779,4 +791,453 @@ button:focus {
     max-width: 64px;
 }
 
+.benner.logo-book {
+    display: none;
+}
+
+.banner {
+    display: block;
+}
+.text__new-product a img{
+    display: none;
+}
+
+
+
 /* end section */
+
+@media only screen and (max-width: 1200px) {
+    .menu__hair {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .left-list {
+        row-gap: 10px;
+    }
+
+    .header-home {
+        padding-right: 3%;
+    }
+
+    .logo-text {
+        padding-right: 5px;
+    }
+
+    .categories-list a {
+        font-size: 12px;
+    }
+
+    .cosmetolory-item {
+        width: calc(100% / 7 - 15px);
+    }
+
+    .text__new-product>a {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .categories-content ul {
+        flex-wrap: wrap;
+    }
+
+    .categories-list {
+        width: calc(100% / 5);
+    }
+    
+
+    .sup-list {
+        flex-wrap: wrap;
+        position: unset;
+        opacity: 1;
+        visibility: visible;
+        z-index: 100000;
+        width: 100%;
+        box-shadow: unset;
+        display: none;
+    }
+
+    .list-menu.active .sup-list{
+        display: block; 
+    }
+
+    .swiper, swiper-container{
+        z-index: 0;
+    }
+    .boshop-left{
+        width: 100%;
+        z-index: 1;
+    }   
+
+    .trademark-boshop {
+        flex-direction: column;
+        row-gap: 16px;
+
+    }
+
+    .trademark-left {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trademark-right {
+        width: 100%;
+    }
+
+    .list-cosmetolory {
+        min-width: 1024px;
+        overflow-x: scroll;
+
+
+    }
+
+    .tab-product {
+        overflow-x: scroll;
+    }
+
+    .item-product p {
+        white-space: unset;
+    }
+
+    .tab-product::-webkit-scrollbar {
+        height: 2px;
+
+        background: gray;
+    }
+
+    /* Track */
+    .tab-product::-webkit-scrollbar-track {
+        background: #f1f1f1;
+
+    }
+
+    /* Handle */
+    .tab-product::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    .tab-product::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    .tab-product::-webkit-scrollbar-thumb:horizontal {
+        background: #B8B8B8;
+        border-radius: 10px;
+    }
+
+    .product-item.one.none {
+        display: none;
+    }
+
+    .product-item.one {
+        width: calc(100% / 3 - 13px);
+    }
+
+    .best-seller__list li {
+        width: calc(100% / 4 - 7px);
+    }
+
+}
+
+@media only screen and (max-width: 975px) {
+    .buy-now {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .buy-now__left a:nth-child(1) {
+        display: none;
+    }
+
+    .buy-now__left {
+        width: 100%;
+    }
+
+    .buy-now__right {
+        width: 100%;
+    }
+
+    .text__new-product {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        row-gap: 30px;
+        text-align: center;
+    }
+
+    .text__new-product>a {
+        width: 100%;
+        display: block;
+    }
+
+    .text__new-product a img{
+        display: block;
+    }
+
+    .text-h2.one {
+        width: 100%;
+    }
+
+    .make-up {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .best-seller__list li {
+        width: calc(100% / 3 - 7px);
+    }
+    .banner a{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        padding: 0px 10px;
+    }
+
+    .tell {
+        display: none;
+    }
+
+    .header-information {
+        border: none;
+    }
+
+    .header-phone {
+        margin: 0;
+    }
+
+    .list-product p:nth-child(5),
+    .list-product p:nth-child(6) {
+        display: none;
+    }
+
+    .benner.logo-none {
+        display: none;
+    }
+
+    .header-search.search-none {
+        display: none;
+    }
+
+    .header-search.blook {
+        margin-top: 20px;
+    }
+
+
+    .banner-left p span {
+        display: none;
+    }
+
+    .banner-right .right-end {
+        display: none;
+    }
+
+    .banner-right {
+        padding-left: 16px;
+        border-left: 1px solid #ffffff;
+    }
+
+    .benner.logo-book {
+        display: block;
+    }
+
+    .list-delivery {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .list-delivery li {
+        width: calc(100% / 2 - 0px);
+    }
+
+    .BNBG p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .donate p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+
+    .price {
+        column-gap: 5px;
+    }
+
+
+    .categories-list a p {
+        white-space: unset;
+    }
+
+    .product-item.one.none {
+        display: block;
+    }
+
+    .product-item.one {
+        width: calc(100% / 2 - 8px);
+    }
+
+    .best-seller__list li {
+        width: calc(100% / 2 - 6px);
+    }
+
+
+    .menu-icon {
+        margin-right: 10px;
+    }
+
+    .header-information a {
+        width: 24px;
+    }
+
+    .header-phone a svg rect {
+        width: 24px;
+        height: 24px;
+    }
+
+    .header-home a img {
+        width: 168px;
+    }
+
+}
+
+@media only screen and (max-width: 479px) {
+    .boshop-right {
+        display: none;
+    }
+
+    .banner-left p {
+        font-size: 16px;
+    }
+
+    .hotdeal-banner {
+        column-gap: 5px;
+    }
+
+    .section-boshop__content {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .section-hotdeal {
+        padding-bottom: 30px;
+    }
+
+    .cosmetology h2 {
+        text-align: center;
+    }
+
+    .trademark-left h2 {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .buy-now {
+        row-gap: 5px;
+    }
+
+    .categories-list a img {
+        width: 37px;
+    }
+
+    .categories-list {
+        min-height: 96px;
+    }
+
+    .list-cosmetolory {
+        justify-content: unset;
+        column-gap: 32px;
+        margin-top: 10px;
+    }
+
+    .cosmetolory-item {
+        width: 89px;
+    }
+
+    .cosmetolory-item a {
+        height: 100%;
+    }
+
+    .item-product span {
+        white-space: nowrap;
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .trademark-product {
+        width: 99px;
+    }
+
+    .trademark-product a {
+        font-size: 14px;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .section__best-seller {
+        padding-top: 0px;
+    }
+
+    .boshop-center {
+        padding-right: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 429px){
+    .banner-left p{
+        font-size: 12px;
+    }
+    .hotdeal-seemore a{
+        white-space: nowrap;
+        padding: 6.5px 15px;
+    }
+    .banner-right{
+        padding-left: 10px;
+    }
+    .banner-right span{
+        margin-right: 5px;
+    }
+    .banner-right p{
+        padding-right: 5px;
+    }
+    .banner-left img{
+        width: 24px;
+    }
+    .product-item.one{
+        width: calc(100% / 1);
+    }
+    .trademark-product{
+        width: unset;
+    }
+    .trademark-boshop{
+        padding-top: 50px;
+    }
+    .best-seller__list li{
+        width: calc(100% / 1);
+    }
+    .list-delivery li{
+        width: calc(100% / 1);
+    }
+    .list-delivery li a span{
+        width: 100%;
+    }
+}

@@ -193,7 +193,7 @@ button:focus {
 
 .categories-content ul {
     display: flex;
-    align-items: stretch;   
+    align-items: stretch;
 }
 
 .categories-list {
@@ -798,7 +798,8 @@ button:focus {
 .banner {
     display: block;
 }
-.text__new-product a img{
+
+.text__new-product a img {
     display: none;
 }
 
@@ -845,7 +846,7 @@ button:focus {
     .categories-list {
         width: calc(100% / 5);
     }
-    
+
 
     .sup-list {
         flex-wrap: wrap;
@@ -858,17 +859,19 @@ button:focus {
         display: none;
     }
 
-    .list-menu.active .sup-list{
-        display: block; 
+    .list-menu.active .sup-list {
+        display: block;
     }
 
-    .swiper, swiper-container{
+    .swiper,
+    swiper-container {
         z-index: 0;
     }
-    .boshop-left{
+
+    .boshop-left {
         width: 100%;
         z-index: 1;
-    }   
+    }
 
     .trademark-boshop {
         flex-direction: column;
@@ -975,7 +978,7 @@ button:focus {
         display: block;
     }
 
-    .text__new-product a img{
+    .text__new-product a img {
         display: block;
     }
 
@@ -992,7 +995,8 @@ button:focus {
     .best-seller__list li {
         width: calc(100% / 3 - 7px);
     }
-    .banner a{
+
+    .banner a {
         display: none;
     }
 }
@@ -1202,45 +1206,57 @@ button:focus {
 
 }
 
-@media only screen and (max-width: 429px){
-    .banner-left p{
+@media only screen and (max-width: 429px) {
+    .banner-left p {
         font-size: 12px;
     }
-    .hotdeal-seemore a{
+
+    .hotdeal-seemore a {
         white-space: nowrap;
         padding: 6.5px 15px;
     }
-    .banner-right{
+
+    .banner-right {
         padding-left: 10px;
     }
-    .banner-right span{
+
+    .banner-right span {
         margin-right: 5px;
     }
-    .banner-right p{
+
+    .banner-right p {
         padding-right: 5px;
     }
-    .banner-left img{
+
+    .banner-left img {
         width: 24px;
     }
-    .product-item.one{
+
+    .product-item.one {
         width: calc(100% / 1);
     }
-    .trademark-product{
+
+    .trademark-product {
         width: unset;
     }
-    .trademark-boshop{
+
+    .trademark-boshop {
         padding-top: 50px;
     }
-    .best-seller__list li{
+
+    .best-seller__list li {
         width: calc(100% / 1);
     }
-    .list-delivery li{
+
+    .list-delivery li {
         width: calc(100% / 1);
     }
-    .list-delivery li a span{
+
+    .list-delivery li a span {
         width: 100%;
     }
-    .categories-list a{
+
+    .categories-list a {
         font-size: 11px;
     }
 }

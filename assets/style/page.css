@@ -193,7 +193,7 @@ button:focus {
 
 .categories-content ul {
     display: flex;
-    align-items: center;
+    align-items: stretch;   
 }
 
 .categories-list {
@@ -1239,5 +1239,8 @@ button:focus {
     }
     .list-delivery li a span{
         width: 100%;
+    }
+    .categories-list a{
+        font-size: 11px;
     }
 }

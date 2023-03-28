@@ -3262,7 +3262,7 @@
                             </div>
                         </div>
                         <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev slider-button for">
+                        <div class="swiper-button-prev slider-button for you">
                             <svg width="48" height="48" viewBox="0 0 30 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="15" cy="15" r="15" fill="#B7C2CB" />
@@ -3271,7 +3271,7 @@
                                     fill="#ffffff" />
                             </svg>
                         </div>
-                        <div class="swiper-button-next  slider-button for">
+                        <div class="swiper-button-next  slider-button for you">
                             <svg width="48" height="48" viewBox="0 0 30 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="15" cy="15" r="15" transform="rotate(180 15 15)" fill="#B7C2CB" />
@@ -5691,19 +5691,25 @@
 
             }
         });
-        let swiper = new Swiper(".makeup-slider", {
-            loop: true,
-            spaceBetween: 70,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: true
-            },
-        }
-        );
+       
+        let widthWindow= window.innerWidth; 
+
+        if (widthWindow > 1024) {
+            let makeUP = new Swiper(".makeup-slider", {
+                loop: true,
+                spaceBetween: 70,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: true
+                },
+            });
+        } 
+
+        
 
 
 

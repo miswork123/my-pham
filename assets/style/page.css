@@ -794,6 +794,8 @@ button:focus {
     display: none;
 }
 
+
+
 @media only screen and (max-width: 1240px) {
     .menu__hair {
         width: 22%;
@@ -806,6 +808,7 @@ button:focus {
         flex-wrap: wrap;
         column-gap: 5%;
     }
+
 }
 
 /* end section */
@@ -820,9 +823,7 @@ button:focus {
         row-gap: 10px;
     }
 
-    .header-home {
-        padding-right: 3%;
-    }
+    
 
     .logo-text {
         padding-right: 5px;
@@ -860,7 +861,37 @@ button:focus {
         width: 100%;
         box-shadow: unset;
         display: none;
+        overflow-y: scroll;
+        height: 400px;
     }
+
+    .sup-list::-webkit-scrollbar {
+        width: 2px;
+        background: gray;
+    }
+
+    /* Track */
+    .sup-list::-webkit-scrollbar-track {
+        background: #f1f1f1;
+
+    }
+
+    /* Handle */
+    .sup-list::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    .sup-list::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    .sup-list::-webkit-scrollbar-thumb:horizontal {
+        background: #B8B8B8;
+        border-radius: 10px;
+    }
+
+
 
     .list-menu.active .sup-list {
         display: block;
@@ -897,8 +928,6 @@ button:focus {
     .list-cosmetolory {
         min-width: 1024px;
         overflow-x: scroll;
-
-
     }
 
     .tab-product {
@@ -911,7 +940,6 @@ button:focus {
 
     .tab-product::-webkit-scrollbar {
         height: 2px;
-
         background: gray;
     }
 
@@ -947,10 +975,13 @@ button:focus {
     .best-seller__list li {
         width: calc(100% / 4 - 7px);
     }
+    .slider-button.for.you{
+        display: none;
+    }
 
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 991px) {
     .buy-now {
         flex-direction: column;
         row-gap: 30px;
@@ -983,6 +1014,8 @@ button:focus {
 
     .text__new-product a img {
         display: block;
+        width: 500px;
+        margin: 0 auto;
     }
 
     .text-h2.one {
@@ -1008,6 +1041,10 @@ button:focus {
 
     .container {
         padding: 0px 10px;
+    }
+
+    .container, .boshop-lef.twhat  {
+        padding: unset;
     }
 
     .tell {
@@ -1037,6 +1074,8 @@ button:focus {
 
     .header-search.blook {
         margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
 
@@ -1086,7 +1125,6 @@ button:focus {
         column-gap: 5px;
     }
 
-
     .categories-list a p {
         white-space: unset;
     }
@@ -1102,27 +1140,10 @@ button:focus {
     .best-seller__list li {
         width: calc(100% / 2 - 6px);
     }
-
-
-    .menu-icon {
-        margin-right: 10px;
+    .menu__hair{
+        min-width: 250px;
     }
-
-    .header-information a {
-        width: 24px;
-    }
-
-    .header-phone a svg rect {
-        width: 24px;
-        height: 24px;
-    }
-
-    .header-home a img {
-        width: 168px;
-    }
-
-
-
+    
 }
 
 @media only screen and (max-width: 479px) {

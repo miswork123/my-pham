@@ -464,7 +464,7 @@ reponsive */
     .boshop-left {
         position: fixed;
         left: 0;
-        top: 29%;
+        top: 28%;
         transform: translateX(-100%);
         opacity: 0;
         visibility: hidden;

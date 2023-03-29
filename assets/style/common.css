@@ -682,7 +682,7 @@ reponsive */
     }
 
     .menu-icon.active span:last-child{
-        transform: translate(2px, -3px) rotate(-45deg);
+        transform: translate(2px, -2px) rotate(-45deg);
         transform-origin: top left;
         transition: 0.25s ease-in;
     }
@@ -741,8 +741,6 @@ Homepage with navigation bar */
 
 .header__inner {
     position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .boshop-left.apsolous {
@@ -759,6 +757,7 @@ Homepage with navigation bar */
     padding-left: 20px;
     background: #fff;
     padding-right: 10px;
+    z-index: 10000000;
 }
 
 .boshop-left.apsolous.show {
@@ -766,7 +765,6 @@ Homepage with navigation bar */
     visibility: visible;
     transform: translateX(0);
 }
-
 
 .header-home.right {
     padding-right: 2.8%;
@@ -900,7 +898,6 @@ Homepage with navigation bar */
 }
 
 .cotegory-checkbook.ther::-webkit-scrollbar {
-
     width: 2px;
     background: gray;
 }
@@ -936,6 +933,7 @@ Homepage with navigation bar */
     font-size: 16px;
     transition: 0.25s ease-in;
     margin-top: 10px;
+    white-space: nowrap;
 }
 
 .buton-apply button:hover {
@@ -1022,10 +1020,17 @@ Homepage with navigation bar */
     width: 100%;
 }
 
+.head-skin__page{
+    display: block;
+    width: 100%;
+}
+
 .head-skin__slider {
     padding-top: 12px;
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 27px;
+    display: flex;
+    column-gap: 8px;
 }
 
 .head__skin-one__list {
@@ -1067,4 +1072,53 @@ Homepage with navigation bar */
 
 .section-hotdeal.hotsize {
     padding-bottom: 18px;
+}
+
+.numerical-order{
+    display: flex;
+    width: 100%;
+    margin-bottom: 55px;
+}
+.numerical-order ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order__list p{
+    padding: 3px 8px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.order__list a{
+    padding: 3px 8px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.order__list.active{
+    border: 1px solid #818181;
+    border-radius: 5px;
+    color: #E26B14;
+}
+
+.order__list a:hover{
+    border: 1px solid #818181;
+    border-radius: 5px;
+    color: #E26B14;
+}
+.filter{
+    display: none;
 }

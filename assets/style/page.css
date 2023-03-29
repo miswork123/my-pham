@@ -1014,7 +1014,7 @@ button:focus {
 
     .text__new-product a img {
         display: block;
-        width: 500px;
+        max-width: 500px;
         margin: 0 auto;
     }
 
@@ -1042,10 +1042,10 @@ button:focus {
     .container {
         padding: 0px 10px;
     }
-
-    .container, .boshop-lef.twhat  {
+    .container.boshop-left.what{
         padding: unset;
     }
+   
 
     .tell {
         display: none;
@@ -1284,5 +1284,182 @@ button:focus {
 
     .categories-list a {
         font-size: 11px;
+    }
+}
+
+/* reponsive */
+@media only screen and (max-width: 1204px){
+    .product-item.max-list .price{
+        column-gap: 10px;
+    }
+    .product__cotegory{
+        width: 90%;
+    }
+    .buton-apply button{
+        padding: 12px 60px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .sup-list.may{
+        width: 76%;
+        left: 25%;
+    }
+    .head-skin__left{
+        display: none;
+    }
+    .product__head-skin{
+        display: block;
+    }
+    .filter{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 21px;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .filter h2{
+        font-size: 20px;
+    }
+
+    .filter__right{
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+    }
+    .filter__right p{
+        font-size: 16px;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+    .head-skin__right{
+        width: 100%;
+    }
+    .img-head__skin{
+        height: unset;
+    }
+
+    .filter__menu{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #ffffff;
+        width: 70%;
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+        padding-top: 20px;
+        border-radius: 10px 10px 0px 0px;
+        z-index: 1000; 
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(100%);
+        transition: 0.25s ease-in;    
+    }
+
+    .filter__menu.show{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .cotegory-checkbook.ther{
+        overflow-y: unset;
+        height: auto;
+    }
+
+    .filter__menu::before{
+        content: '';
+        width: 0; 
+        height: 0; 
+        border-left: 13px solid transparent; 
+        border-right: 13px solid transparent; 
+        border-bottom: 20px solid #ffffff;
+        position: absolute;
+        top: -20px;
+        left: 97%;
+        margin-left: -20px;
+    }
+
+    .filter__scool{
+        display: block;
+        width: 95%;
+        overflow-y: scroll;
+        height: 100vh;
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+
+    .filter__scool::-webkit-scrollbar {
+        width: 2px;
+        background: gray;
+    }
+    
+    /* Track */
+    .filter__scool::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    
+    /* Handle */
+    .filter__scool::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+    
+    /* Handle on hover */
+    .filter__scool::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    
+    .filter__scool::-webkit-scrollbar-thumb:horizontal {
+        background: #000;
+        border-radius: 10px;
+    }
+
+
+    .buton-apply.max{
+        width: 100%;
+        
+    }
+
+    .buton-apply.max button{
+        width: 100%;
+
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .sup-list.may{
+        position: unset;
+        width: 100%;
+    }
+
+    .list-menu.may{
+        display: block;
+    }
+    .left-list.may .menu__hair{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .logo-text{
+        width: 13%;
+    }
+    .menu-icon.blook.active span:last-child {
+        transform: translate(3px, -1px) rotate(-45deg);
+        transform-origin: top left;
+        transition: 0.25s ease-in;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .menu-icon.blook.active span:first-child {
+        transform-origin: top left;
+        transform: translate(3px, 1px) rotate(45deg);
+        transition: 0.25s ease-in;
+    }
+    .menu-icon.blook.active span:last-child {
+        transform: translate(2px, -2px) rotate(-45deg);
+        transform-origin: top left;
+        transition: 0.25s ease-in;
     }
 }

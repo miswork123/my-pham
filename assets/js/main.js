@@ -51,5 +51,13 @@ window.addEventListener("scroll", () => {
 });
 
 
+let scroll = document.querySelector(".filter__right");
+let listScroll = document.querySelector(".filter__menu");
+
+scroll.addEventListener("click", function () {
+listScroll.classList.toggle("show");
+});
+
+
 
 

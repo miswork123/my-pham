@@ -1640,6 +1640,7 @@ button:focus {
     border-radius: 10px;
     font-size: 16px;
     font-weight: 500;
+    color: #5D5D5D;
 }
 
 .section-Cleansing {
@@ -1842,9 +1843,11 @@ button:focus {
     outline: none;
     width: 36px;
     height: 36px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     border: 1.5px solid #F5F6F9;
+   text-align: center;
+  
 }
 
 .buy__now {
@@ -1861,6 +1864,10 @@ button:focus {
     font-weight: 600;
     padding: 13px 20px;
     border-radius: 10px;
+}
+
+.buy__now a:hover{
+    opacity: 0.8;
 }
 
 .buy__now a:nth-child(1) {
@@ -2083,7 +2090,7 @@ td {
     width: 18%;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    
 }
 
 .water__right h3 {

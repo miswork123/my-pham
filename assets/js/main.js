@@ -28,6 +28,28 @@ for (let i = 0; i < titleQuestion.length; i++) {
 		}
 	});
 
+	
+	const tabs = document.querySelector.bind(document)
+	const tabgg = document.querySelectorAll.bind(document)
+  
+	const water  = $$('.tab__list')
+	const lefts = $$('.water__left-click')
+  
+	water.forEach((tab, index) =>{
+		const best = lefts[index]
+  
+		tab.onclick = function (){
+  
+  
+			$('.tab__list.active').classList.remove('active')
+			$('.water__left-click.show').classList.remove('show')
+			
+			this.classList.add('active')
+			best.classList.add('show')
+		}
+	});
+  
+
 
 	let menuIteam = document.querySelector(".menu-icon");
 	let menuMobile = document.querySelector(".boshop-left");
@@ -76,6 +98,7 @@ function increaseCount(a, b) {
 	  input.value = value;
 	}
   }
+
 
 
 

@@ -80,7 +80,7 @@ scroll.addEventListener("click", function () {
 listScroll.classList.toggle("show");
 });
 
-
+// product page
 function increaseCount(a, b) {
 	var input = b.previousElementSibling;
 	var value = parseInt(input.value, 10);
@@ -98,6 +98,24 @@ function increaseCount(a, b) {
 	  input.value = value;
 	}
   }
+
+  let title = document.querySelectorAll('.new-down');
+	for (let i = 0; i < title.length; i++) {
+
+	title[i].addEventListener('click', function() {
+		
+		this.classList.toggle('active');
+	});
+}
+
+
+
+
+
+
+
+
+
 
 
 

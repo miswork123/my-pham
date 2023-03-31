@@ -1660,10 +1660,11 @@ button:focus {
     width: 48%;
 }
 
-.swiper-button-next.widt{
+.swiper-button-next.widt {
     width: 10px;
     z-index: 1000;
 }
+
 .swiper-button-prev.width {
     width: 10px;
     z-index: 1000;
@@ -1691,10 +1692,10 @@ button:focus {
     font-weight: 500;
 }
 
-.water-description a img:hover{
+.water-description a img:hover {
     transform: scaleX(1.2);
 }
-    
+
 .ther-in1 {
     font-size: 20px;
     font-weight: 500;
@@ -1856,8 +1857,8 @@ button:focus {
     padding: 5px;
     border-radius: 5px;
     border: 1.5px solid #F5F6F9;
-   text-align: center;
-  
+    text-align: center;
+
 }
 
 .buy__now {
@@ -1876,7 +1877,7 @@ button:focus {
     border-radius: 10px;
 }
 
-.buy__now a:hover{
+.buy__now a:hover {
     opacity: 0.8;
 }
 
@@ -2101,10 +2102,10 @@ td {
     width: 18%;
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.water__right> h3 {
+.water__right>h3 {
     font-size: 16px;
     padding-top: 14px;
 
@@ -2119,32 +2120,36 @@ td {
 .product-item.max-list.line {
     width: 100%;
 }
-.drop-down{
+
+.drop-down {
     display: none;
 }
-.none-vip{
+
+.none-vip {
     margin-bottom: 15px;
 }
 
 
 /* reponsive product-page */
 
-@media only screen and (max-width: 1124px){
-    .water__right{
+@media only screen and (max-width: 1124px) {
+    .water__right {
         min-width: 200px;
     }
 }
 
-@media only screen and (max-width: 1024px){
-    .buy__now{
+@media only screen and (max-width: 1024px) {
+    .buy__now {
         flex-wrap: wrap;
         row-gap: 5px;
     }
-    .tab__list{
+
+    .tab__list {
         text-align: center;
         padding: 14px 10px;
     }
-    .buy__now a:nth-child(3){
+
+    .buy__now a:nth-child(3) {
         width: 100%;
         text-align: center;
         display: flex;
@@ -2152,169 +2157,198 @@ td {
         justify-content: center;
     }
 }
-@media only screen and (max-width: 991px){
-    .buy__now{
+
+@media only screen and (max-width: 991px) {
+    .buy__now {
         margin-top: 20px;
     }
-    .Cleansing__home{
+
+    .Cleansing__home {
         flex-direction: column;
         margin-bottom: 30px;
     }
-    .Cleansing__home-left{
+
+    .Cleansing__home-left {
         width: 100%;
-       
+
     }
-    .Cleansing__home-right{
+
+    .Cleansing__home-right {
         width: 100%;
     }
-    .water__right{
-        
-    }
-    .water__left{
+
+    .water__right {}
+
+    .water__left {
         padding-right: 5px;
     }
-    .list__home-page{
+
+    .list__home-page {
         font-size: 14px;
         align-items: flex-start;
     }
 }
 
-@media only screen and (max-width: 768px){
-    .water__right{
+@media only screen and (max-width: 768px) {
+    .water__right {
         display: none;
     }
-    .water__left{
+
+    .water__left {
         width: 100%;
-}
+    }
 
-.make-payment{
-    width: 200%;
-}
+    .make-payment {
+        width: 200%;
+    }
 
-.drop-down{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #00000026;
-    font-size: 16px;
-    font-weight: 500;
-}
+    .drop-down {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #00000026;
+        font-size: 16px;
+        font-weight: 500;
+    }
 
-.water__left-tab{
-    display: none;
-}
+    .water__left-tab {
+        display: none;
+    }
 
-.none-vip{
-    display: none;
-}
-.new-down{
-    width: 100%;
-    display: block;
-}
+    .none-vip {
+        display: none;
+    }
 
-
-#miswork{
-    display: none;
-}
-
-.new-down.active #miswork{
-    display: block;
-}
-
-.section-hotdeal.hotsize.vip h2{
-    font-size: 20px;
-    text-align: center;
-}
-.list__home-page{
-    font-size: 14px;
-    align-items: flex-start;
-}
-.list__home-page  a{
-    white-space: nowrap;
-}
+    .new-down {
+        width: 100%;
+        display: block;
+    }
 
 
+    #miswork {
+        display: none;
+    }
 
-.list__home-page{
-    flex-wrap: wrap;
-    padding: 7px 7px;
-}
-.cart.one p{
-    font-size: 14px;
-    padding-right: 7px;
-    margin-right: 7px;
-}
-.star p{
-    font-size: 14px;
-}
-.cart.one span{
-    font-size: 14px;
-}
+    .new-down.active #miswork {
+        display: block;
+    }
+
+    .section-hotdeal.hotsize.vip h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .list__home-page {
+        font-size: 14px;
+        align-items: flex-start;
+    }
+
+    .list__home-page a {
+        white-space: nowrap;
+    }
+
+
+
+    .list__home-page {
+        flex-wrap: wrap;
+        padding: 7px 7px;
+    }
+
+    .cart.one p {
+        font-size: 14px;
+        padding-right: 7px;
+        margin-right: 7px;
+    }
+
+    .star p {
+        font-size: 14px;
+    }
+
+    .cart.one span {
+        font-size: 14px;
+    }
 
 }
 
-@media only screen and (max-width: 479px){
-    .buy__now{
+@media only screen and (max-width: 479px) {
+    .buy__now {
         display: flex;
         align-items: center;
         column-gap: 3px;
         justify-content: center;
     }
 
-    .buy__now a:nth-child(1){
+    .buy__now a:nth-child(1) {
         padding: 13px 10.5px;
     }
-    .buy__now a:nth-child(2){
+
+    .buy__now a:nth-child(2) {
         padding: 13px 49px;
     }
 
-    .star.one svg{
+    .star.one svg {
         width: 19px;
     }
-    .evaluate{
+
+    .evaluate {
         flex-wrap: wrap;
     }
-    .evaluate-left.one{
+
+    .evaluate-left.one {
         flex-wrap: wrap;
         row-gap: 4px;
     }
-    .price.pro h3{
+
+    .price.pro h3 {
         font-size: 24px;
     }
-    .water__left{
+
+    .water__left {
         padding-right: 0;
     }
-    .make-payment{
+
+    .make-payment {
         width: 160%;
     }
-    .make-payment{
+
+    .make-payment {
         right: -9px;
     }
-    .make-payment::before{
+
+    .make-payment::before {
         left: 98%;
+    }
+
+    .number__of-rows span {
+        width: 15px;
+        height: 15px;
+        top: -8px;
     }
 
 }
 
 
-@media only screen and (max-width: 429px){
-    .buy__now a:nth-child(2){
+@media only screen and (max-width: 429px) {
+    .buy__now a:nth-child(2) {
         width: 100%;
         align-items: center;
         justify-content: center;
     }
-    .buy__now a:nth-child(1){
+
+    .buy__now a:nth-child(1) {
         width: 100%;
         align-items: center;
         text-align: center;
         justify-content: center;
     }
-    table{
+
+    table {
         font-size: 14px;
     }
-    .make-payment{
+
+    .make-payment {
         width: 220%;
     }
 }

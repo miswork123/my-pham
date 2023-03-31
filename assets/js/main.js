@@ -1,4 +1,30 @@
+document.getElementById("showcart").style.opacity = "0";
+
+function showcart(){
+	var x = document.getElementById("showcart");
+	if (x.style.opacity == "1"){
+		x.style.opacity = "0";
+	}else{
+		x.style.opacity = "1";
+	}
+}
+
+let tibeQuestion = document.querySelectorAll('.new-down');
+
+for (let i = 0; i < tibeQuestion.length; i++) {
+
+	tibeQuestion[i].addEventListener('click', function() {
+		
+		this.classList.toggle('active');
+	});
+}
+
+
+
+
+
 let titleQuestion = document.querySelectorAll('.list-menu');
+
 for (let i = 0; i < titleQuestion.length; i++) {
 
 	titleQuestion[i].addEventListener('click', function() {
@@ -107,6 +133,15 @@ function increaseCount(a, b) {
 		this.classList.toggle('active');
 	});
 }
+
+
+
+let number = document.querySelector(".number__of-rows lop");
+let payMent = document.querySelector(".make-payment");
+
+number.addEventListener("click", function () {	
+payMent.classList.toggle("show");
+});
 
 
 

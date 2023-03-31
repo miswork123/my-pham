@@ -367,6 +367,50 @@
                     </div>
                 </div>
                 <div class="header__home-right">
+                    <div class="make-payment" id="showcart">
+                        <div class="mount-of-money">
+                            <p>Tổng cộng: <span>1.500.000 đ</span></p>
+                            <p>x</p>
+                        </div>
+                        <div class="scollpay">
+                            <div class="payment-money">
+                                <a href=""><img src="./assets/image/payment-money01.png" alt=""></a>
+                                <div class="money__of">
+                                    <p>Nước Tẩy Trang Làm Sạch Sâu 3 In 1 L'Oreal Micellar Water Deep Cleansing</p>
+                                    <div class="king__right">
+                                        <p>Số lượng: 2</p>
+                                        <span>290.000 đ</span>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="payment-money">
+                                <a href=""><img src="./assets/image/payment-money002.png" alt=""></a>
+                                <div class="money__of">
+                                    <p>Dầu Gội Tsubaki Premium Repair Shampoo | 490ML</p>
+                                    <div class="king__right">
+                                        <p>Số lượng: 2</p>
+                                        <span>290.000 đ</span>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="payment-money">
+                                <a href=""><img src="./assets/image/payment-money01.png" alt=""></a>
+                                <div class="money__of">
+                                    <p>Nước Tẩy Trang Làm Sạch Sâu 3 In 1 L'Oreal Micellar Water Deep Cleansing</p>
+                                    <div class="king__right">
+                                        <p>Số lượng: 2</p>
+                                        <span>290.000 đ</span>
+                                    </div>
+                                </div>    
+                            </div>                          
+                        </div>
+                        <div class="continue">
+                            <a href="">Tiến hành thanh toán <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464467C10.9763 0.269205 10.6597 0.269205 10.4645 0.464467C10.2692 0.659729 10.2692 0.976312 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM-4.37114e-08 4.5L14 4.5L14 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
+                              </svg>
+                              </a>  
+                      </div>
+                    </div>
                     <div class="header-phone">
                         <a href="">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -384,12 +428,13 @@
                         <a class="tell" href="tel:1900 7101">1900 7101</a>
                     </div>
                     <div class="header-information">
-                        <a href=""> <img src="./assets/image/heart 01.png" alt=""></a>
+                        <a class="number__of-rows"  href=""> <img src="./assets/image/heart 01.png" alt="">
+                            <span>5</span>
+                        </a>
                         <a href=""> <img src="./assets/image/heart02.png" alt=""></a>
-                        <a class="" href="">
-
-
-                            <img src="./assets/image/heart03.png" alt="">
+                        <a class="number__of-rows lop" onclick="showcart()">
+                            <span>4</span>
+                            <img src="./assets/image/heart03.png" alt="">                       
                         </a>
                     </div>
                 </div>
@@ -596,13 +641,13 @@
                     </div>  
                     <div class="water__left-click show">
                         <div class="new-down">
-                            <div class="drop-down active">
+                            <div class="drop-down " onclick="miswork()">
                                 <h3>Thông tin sản phẩm</h3>
                                 <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14 1L7.60317 6L1 0.999999" stroke="black" stroke-width="2"/>
                                 </svg>
                             </div>
-                            <div class="miswork">
+                            <div class="miswork" id="miswork">
                                 <p>
                                     <strong>Nước Tẩy Trang L'Oréal</strong> là dòng sản phẩm tẩy trang dạng nước đến từ thương
                                     hiệu L'Oreal Paris, được ứng dụng công nghệ Micellar dịu nhẹ giúp làm sạch da, lấy đi bụi
@@ -656,14 +701,14 @@
                             </div>
                         </div>
                         <div class="new-down">
-                            <div class="drop-down">
+                            <div class="drop-down" onclick="miswork()">
                                 <h3>Thông số sản phẩm</h3>
                                 <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14 1L7.60317 6L1 0.999999" stroke="black" stroke-width="2"/>
                                 </svg>
                             </div>
                             <h3 class="none-vip">Thông số sản phẩm</h3>
-                            <div class="parameter miswork">
+                            <div class="parameter miswork" id="miswork">
                                 
                                 <table border="1" bordercolor="#F4F4F4" width="100%">
                                     <tr>
@@ -698,14 +743,14 @@
                             </div>
                         </div>
                         <div class="new-down">
-                            <div class="drop-down">
+                            <div class="drop-down" onclick="miswork()">
                                 <h3>Thành phần sản phẩm</h3>
                                 <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14 1L7.60317 6L1 0.999999" stroke="black" stroke-width="2"/>
                                 </svg>
                             </div>
                             <h3 class="none-vip">Thành phần sản phẩm</h3>
-                            <div class="text__top see miswork">
+                            <div class="text__top see miswork" id="miswork">
                                 
                                 <strong> 1. L'Oréal Paris Micellar Water 3-in-1 Deep Cleansing Even For Sensitive Skin (Xanh
                                     dương đậm)
@@ -763,7 +808,7 @@
                             </svg>
                         </div>
                         <h3 class="none-vip">Hướng dẫn sử dụng</h3>
-                        <div class="text__top use miswork">                     
+                        <div class="text__top use miswork" id="miswork">                     
                             <p>Lắc đều sản phẩm Nước Tẩy Trang L'Oreal trước khi sử dụng.</p>
                             <p>Đổ nước tẩy trang thấm ướt vừa đủ lên miếng bông tẩy trang.</p>
                             <p>Nhẹ nhàng lau lên mặt, mắt và môi theo chuyển động tròn (Riêng đối với vùng mắt, bạn hãy
@@ -783,7 +828,7 @@
                                 </svg>
                             </div>
                             <h3 class="none-vip">Đánh giá</h3>
-                            <div class="CSKH-Boshop miswork">                        
+                            <div class="CSKH-Boshop miswork" id="miswork">                        
                                 <img src="./assets/image/danhgia.PNG" alt="">
                             </div>
                        </div>

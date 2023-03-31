@@ -1629,6 +1629,9 @@ button:focus {
 
 /* end collection-page */
 
+
+
+
 .list__home-page {
     margin-top: 24px;
     display: flex;
@@ -2184,6 +2187,10 @@ td {
         width: 100%;
 }
 
+.make-payment{
+    width: 200%;
+}
+
 .drop-down{
     display: flex;
     align-items: center;
@@ -2202,9 +2209,17 @@ td {
 .none-vip{
     display: none;
 }
+.new-down{
+    width: 100%;
+    display: block;
+}
 
 
-.new-down.active .miswork{
+#miswork{
+    display: none;
+}
+
+.new-down.active #miswork{
     display: block;
 }
 
@@ -2271,6 +2286,15 @@ td {
     .water__left{
         padding-right: 0;
     }
+    .make-payment{
+        width: 160%;
+    }
+    .make-payment{
+        right: -9px;
+    }
+    .make-payment::before{
+        left: 98%;
+    }
 
 }
 
@@ -2289,5 +2313,8 @@ td {
     }
     table{
         font-size: 14px;
+    }
+    .make-payment{
+        width: 220%;
     }
 }

@@ -1198,3 +1198,160 @@ Homepage with navigation bar */
 .arrange.two {
     display: none;
 }
+
+
+.number__of-rows{
+    position: relative;
+}
+
+.number__of-rows span{
+    position: absolute;
+    content: '';
+    top: -10px;
+    right: -8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #BBD66A;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header__home-right{
+    position: relative;
+}
+.make-payment{
+    width: 100%;
+    position: absolute;
+    right: -18px;
+    top: 60px;
+    background: #ffffff;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 100000;
+}
+
+.make-payment::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #ffffff;
+    position: absolute;
+    top: -19px;
+    left: 93%;
+    margin-left: -20px;
+}
+
+
+.make-payment.show{
+    opacity: 1;
+    visibility: visible;
+    z-index: 1000000000;
+   
+}
+
+.mount-of-money{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #EBEBEB;
+    margin-bottom: 10px;
+}
+.mount-of-money p:nth-child(2){
+    cursor: pointer;
+}
+
+.mount-of-money p span{
+    color: #6B1D14;
+    font-weight: 600;
+}
+
+.payment-money{
+    display: flex;
+    align-items: center;
+    width: 98%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #EBEBEB; 
+    column-gap: 10px;  
+}
+
+.scollpay{
+    display: block;
+    width: 98%;
+    overflow-y: scroll;
+    height: 270px;
+    padding-right: 5px;
+    
+}
+
+.scollpay::-webkit-scrollbar {
+    width: 2px;
+    background: gray;
+}
+
+/* Track */
+.scollpay::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.scollpay::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.scollpay::-webkit-scrollbar-thumb:horizontal {
+    background: #000;
+    border-radius: 10px;
+}
+
+.payment-money a img{
+    width: 71px;
+    height: 71px;
+}
+
+.money__of{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.king__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.king__right span{
+    color: #6B1D14;
+    font-weight: 600;
+}
+
+.continue{
+    display: flex;
+    padding: 10px;
+}
+
+.continue a{
+    width: 100%;
+    padding: 7px 40px;
+    white-space: nowrap;
+    background: #362962;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: 0.25s ease-in;
+}
+
+.continue a:hover{
+    background: #818181;
+}

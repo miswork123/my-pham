@@ -2235,6 +2235,10 @@ td {
         display: block;
     }
 
+    .new-down.active .drop-down svg {
+        transform: rotate(180deg);
+    }
+
     .section-hotdeal.hotsize.vip h2 {
         font-size: 20px;
         text-align: center;
@@ -2352,3 +2356,225 @@ td {
         width: 220%;
     }
 }
+
+
+/* end section product-page */
+
+/* start section product-page-with-ATC-bar */
+
+
+.product-bar {
+    width: 100%;
+    background: #F0F0F0;
+    padding: 14px 0px;
+}
+
+.Cleansing__home-right.flexx {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bar-left {
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-start;
+}
+
+.bar-left a img {
+    width: 76px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.ther-in1.font {
+    font-size: 16px;
+}
+
+.price.pro.font {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.price.pro.font h3 {
+    font-size: 16px;
+}
+
+.price.pro.font h4 {
+    font-size: 12px;
+}
+
+.discount.pro.widh {
+    width: 28px;
+    height: 28px;
+}
+
+.bar-left__miss p {
+    font-size: 14px;
+}
+
+.item-price.pro.font {
+    column-gap: 15px;
+}
+
+.quantity.feell {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.buy__now.marin {
+    margin-top: 0;
+    margin-left: 26px;
+}
+
+.official.pading {
+    padding-top: 15px;
+}
+
+/* reponsive Product-pag- with-ATC-bar */
+
+@media only screen and (max-width: 768px) {
+    .quantity.feell {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        justify-content: center;
+        background: #ffffff;
+        padding: 10px 0px;
+        align-items: center;
+    }
+
+    .buy__now.marin a:nth-child(1) {
+        padding: 7px 12px;
+        font-size: 16px;
+    }
+
+    .buy__now.marin a:nth-child(2) {
+        padding: 7px 16px;
+        font-size: 16px;
+    }
+
+    .counter.loow {
+        margin-top: 0;
+    }
+
+    .buy__now.marin {
+        margin-left: 5px;
+        column-gap: 5px;
+    }
+}
+
+/* end Product-pag- with-ATC-bar */
+
+
+.hotdeal-banner.rep{
+    background: #E26B14;
+    padding: 9px 0px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    margin-top: 16px;
+}
+
+.donate.dont{
+    width: 70%;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.present{
+    padding: 12px 8px;
+    width: 100%;
+    border: 1px solid #E9E9E9;
+    border-radius: 10px;    
+}
+
+.gift-box{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    column-gap: 8px;
+    margin-bottom: 18px;
+    padding-left: 5px;
+}
+
+.present__cotton{
+    width: 100%;
+    
+}
+
+.Samayata{
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    align-items: center;
+    column-gap: 16px;
+    margin-bottom: 8px;
+}
+
+.Samayata a{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #E9E9E9;
+    border-radius: 10px;
+    padding: 9px;
+}
+
+.Samayata input#radio{
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    background: #FFC008;
+}
+
+.Samayata label span{
+    color: #E26B14;
+}
+
+.Samayata.hai a{
+    padding: 13px;
+}
+
+.buy__now.trip{
+    margin-top: 16px;
+}
+
+/* reponsive with-flash-sale */
+
+@media only screen and (max-width: 768px){
+    .banner-left.block p span{
+        display: block;
+        white-space: nowrap;
+    }
+
+    .banner-left.block a img{
+        width: 47px;
+        height: 43px;
+    }
+
+    .banner-left.block p{
+        white-space: nowrap;
+        display: flex;
+        
+    }
+    .banner-right.love p{
+        display: block;
+        border: none;
+    }
+    .banner-right.love{
+        margin-left: 20px;
+        border: none;
+    }
+
+    .hotdeal-banner.rep{
+        flex-direction: column;
+        align-items: flex-start;  
+    }
+}
+
+
